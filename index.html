@@ -20,6 +20,15 @@
             padding: 80px 20px 50px;
         }
 
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 20px;
+        }
+
         header h1 {
             margin: 0;
             font-size: 3em;
@@ -75,6 +84,14 @@
             object-fit: cover;
         }
 
+        .game-author-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #0d6efd;
+        }
+
         .game-card div {
             flex: 1;
         }
@@ -105,6 +122,7 @@
 <body>
 
     <header>
+        <img src="Mypic.jpg" alt="Kasra Farmanbar" class="profile-pic">
         <h1>Kasra Farmanbar</h1>
         <p>Game Developer | Indie Creator</p>
     </header>
@@ -119,15 +137,15 @@
             <h2>My Games</h2>
 
             <div class="game-card">
-                <img src="https://via.placeholder.com/150" alt="Snack Snatcher">
+                <img src="Snack Snatcher.png" alt="Snack Snatcher">
+                <img src="https://raw.githubusercontent.com/yourusername/your-repo/main/images/profile.jpg" alt="Kasra Farmanbar" class="game-author-pic">
                 <div>
                     <h3>Snack Snatcher</h3>
-                    <p>Built during the Berkiz Game Jam, Snack Snatcher is a fun and addictive game where players compete to grab the most snacks while avoiding obstacles. It combines fast-paced action with playful design, showcasing my skills in game mechanics and level design.</p>
-                    <a href="#" target="_blank">Play Now →</a>
+                    <p>Built during the Brackeys Game Jam, Snack Snatcher is a fun and addictive game where players compete to grab the most snacks while avoiding obstacles. It combines fast-paced action with playful design, showcasing my skills in game mechanics and level design.</p>
+                    <a href="https://kasrafarmanbar.itch.io/snack-snatcher" target="_blank">Play Now →</a>
                 </div>
             </div>
 
-            <!-- Add more games by duplicating the game-card div -->
         </section>
     </main>
 
