@@ -3,40 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kasra Farmanbar - Developer & Creator</title>
+  <title>Kasra Farmanbar - Game Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #0a0f1c;
+      background: linear-gradient(to right, #0a0f1c, #1a1f2b);
       color: #ddd;
     }
 
     header {
-      text-align: center;
-      padding: 60px 20px 40px;
       background-color: #0d1b3d;
+      color: white;
+      text-align: center;
+      padding: 80px 20px 50px;
     }
 
     .profile-pic {
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #4c8edb;
+      border: 4px solid #1f2a44;
       margin-bottom: 20px;
     }
 
     header h1 {
-      font-size: 2.8em;
       margin: 0;
+      font-size: 3em;
     }
 
     header p {
-      font-size: 1.2em;
-      color: #a0b3d6;
+      font-size: 1.5em;
       margin-top: 10px;
+      color: #a0b3d6;
     }
 
     main {
@@ -50,38 +51,66 @@
     }
 
     h2 {
-      font-size: 2em;
       color: #4c8edb;
-      margin-bottom: 20px;
+      font-size: 2em;
+      margin-bottom: 15px;
     }
 
-    p, li {
-      font-size: 1.1em;
-      line-height: 1.7;
+    .intro {
+      font-size: 1.2em;
+      line-height: 1.8;
+    }
+
+    .game-card {
+      background-color: #1f2633;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      padding: 25px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: transform 0.3s;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .game-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .game-author-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #4c8edb;
+    }
+
+    .game-card div {
+      flex: 1;
+    }
+
+    .game-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.5em;
+      color: #fff;
     }
 
     ul {
       padding-left: 20px;
     }
 
-    .card {
-      background-color: #1f2633;
-      border-radius: 12px;
+    footer {
+      text-align: center;
       padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-      margin-bottom: 25px;
-    }
-
-    .card img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #fff;
+      background-color: #0d1b3d;
+      color: #aaa;
     }
 
     a {
@@ -92,67 +121,63 @@
     a:hover {
       text-decoration: underline;
     }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #0d1b3d;
-      color: #aaa;
-    }
   </style>
 </head>
 <body>
-
   <header>
     <img src="Mypic.jpg" alt="Kasra Farmanbar" class="profile-pic" />
     <h1>Kasra Farmanbar</h1>
-    <p>Game Developer • Web Designer • Student</p>
+    <p>Game Developer | Indie Creator</p>
   </header>
 
   <main>
-    <section>
+    <section class="intro">
       <h2>About Me</h2>
-      <p>I'm Kasra, a student in Computer Networks and Software. I love building games, designing websites, and learning new tech skills. Whether it's pixel art or PHP, I enjoy turning ideas into real projects.</p>
+      <p>Hello! I'm Kasra Farmanbar, an independent game developer passionate about creating engaging and fun experiences. I love participating in game jams and turning creative ideas into playable games. My goal is to design games that are entertaining, unique, and memorable for players.</p>
     </section>
 
-    <section>
-      <h2>Skills</h2>
+    <section class="skills">
+      <h2>Education & Skills</h2>
+      <p>I'm currently studying Computer Networks and Software at school, and I'm actively expanding my skills through hands-on practice and personal projects. My current skill set includes:</p>
       <ul>
-        <li>HTML, CSS, JavaScript, PHP</li>
-        <li>SQL and database management</li>
+        <li>Basic networking (IP addressing, routers, switches)</li>
+        <li>Installing and configuring Windows and essential software</li>
+        <li>Web design using HTML and CSS</li>
+        <li>Frontend scripting with JavaScript</li>
+        <li>Server-side development using PHP</li>
+        <li>Working with databases and writing SQL queries</li>
         <li>Computer hardware setup and troubleshooting</li>
-        <li>Basic networking (IP, routers, switches)</li>
-        <li>Game development with Unity and C#</li>
-        <li>Pixel art design for 2D games</li>
+        <li>Game development with Unity and beginner-level C# scripting</li>
+        <li>Creating pixel art for 2D games and retro-style visuals</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-
-      <div class="card">
-        <img src="Snack Snatcher.png" alt="Snack Snatcher" />
-        <h3>Snack Snatcher</h3>
-        <p>A fast-paced game built during the Berkiz Game Jam. Grab snacks, dodge obstacles, and compete for the highest score!</p>
-        <a href="https://kasrafarmanbar.itch.io/snack-snatcher" target="_blank">Play Now →</a>
-      </div>
-
-      <div class="card">
-        <img src="software-project.jpg" alt="Student Management System" />
-        <h3>Student Management System</h3>
-        <p>A desktop app built in C# for managing student records, grades, and attendance. Uses SQL Server for data storage.</p>
-      </div>
+    <section class="goals">
+      <h2>My Goals</h2>
+      <p>As I continue my studies in networks and software, my goal is to combine my technical knowledge with creative game development. I aim to:</p>
+      <ul>
+        <li>Build multiplayer games with real-time networking</li>
+        <li>Explore cybersecurity in game environments</li>
+        <li>Design scalable backend systems for online games</li>
+        <li>Contribute to open-source tools for indie developers</li>
+      </ul>
     </section>
 
-    <section>
-      <h2>Goals</h2>
-      <p>My goal is to become a full-stack developer and indie game creator. I want to build multiplayer games, contribute to open-source tools, and keep improving my skills in both software and hardware.</p>
+    <section class="games">
+      <h2>My Games</h2>
+      <div class="game-card">
+        <img src="Snack Snatcher.png" alt="Snack Snatcher" />
+        <div>
+          <h3>Snack Snatcher</h3>
+          <p>Built during the Berkiz Game Jam, Snack Snatcher is a fun and addictive game where players compete to grab the most snacks while avoiding obstacles. It combines fast-paced action with playful design, showcasing my skills in game mechanics and level design.</p>
+          <a href="https://kasrafarmanbar.itch.io/snack-snatcher" target="_blank">Play Now →</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     © 2025 Kasra Farmanbar | <a href="https://github.com/yourusername" target="_blank">GitHub</a>
   </footer>
-
 </body>
 </html>
